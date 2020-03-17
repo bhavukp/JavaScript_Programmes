@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+function largestnumberinarrays(arr){
+var max = [];
+for(i=0;i<arr.length;i++){
+  var tempmax=arr[i][0];
+  for(j=0;j<arr[i].length;j++){
+    currentElement= arr[i][j];
+    if(tempmax<currentElement){
+      tempmax=currentElement;
+    }
+  }
+  max.push(tempmax);
+}
+return max;
+}
+document.write(largestnumberinarrays([[1,2,3],[4,5,6]]));
+</script>
+</body>
+</html>

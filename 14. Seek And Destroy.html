@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function destroy(arr){
+		var arg = Array.from(arguments);
+		arg.splice(0,1);
+		result = [];
+
+		for (var elem of arr){
+			if(arg.indexOf(elem)== -1){
+				result.push(elem);
+			}
+		}
+		return result;
+	}
+	document.write(destroy([1,2,3,4],3,4));
+</script>
+</body>
+</html>

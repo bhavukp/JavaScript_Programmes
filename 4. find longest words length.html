@@ -1,0 +1,18 @@
+<html>
+    <html></html>
+    <body>
+        <script type="text/javascript">
+            function longestword(str){
+                var longest = " ";
+                var x = str.split(" ");
+                for(i=0;i<x.length;i++){
+                if(x[i].length>longest.length){
+                    longest = x[i];
+                }
+                }
+                    return longest.length;
+            }
+            document.write(longestword("hey man wassup"));
+        </script>
+    </body>
+</html>

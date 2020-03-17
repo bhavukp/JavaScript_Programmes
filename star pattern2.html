@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var num = prompt();
+	for (row=1;row<=num;row++){
+		for(star=1;star<=row;star++){
+			document.write("*");
+		}
+		for(space=1;space<=num-row;space++){
+			document.write("&nbsp");
+		}
+		document.write("<br/>");
+	}
+
+</script>
+
+</body>
+</html>

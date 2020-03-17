@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+                function uppercase(str){
+                    var x = str.toLowerCase().split(" ");
+                    for(i=0;i<x.length;i++){
+                        x[i]= x[i][0].toUpperCase()+ x[i].slice(1);
+                    }
+                    return x.join(" ");
+                }
+                document.write(uppercase("hey man wassup"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function rot13(str){
+		solution = "";
+		for (i=0;i<str.length;i++){
+			var x = str[i].charCodeAt();
+			if(x>=65 && x<=90){
+				solution += String.fromCharCode(x+13);
+			}
+		}
+		return solution;
+	}
+	document.write(rot13("ABC"));
+</script>
+</body>
+</html>

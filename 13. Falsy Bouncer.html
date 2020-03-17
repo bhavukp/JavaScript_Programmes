@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function bouncer(arr){
+	var truthValues = [];
+
+	for(var elem of arr){
+		if(elem) truthValues.push(elem);
+	}
+	return truthValues;
+}	
+document.write(bouncer([null,undefined,NaN,false,8,"hello","B"]));
+</script>
+</body>
+</html>

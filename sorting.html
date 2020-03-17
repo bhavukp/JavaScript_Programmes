@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sorting</title>
+</head>
+<body>
+<script type="text/javascript">
+function sort(arr){
+for (i=0;i<arr.length;i++){
+	for (j=i+1;j<=arr.length;j++){
+		if (arr[i]>arr[j]){
+		var temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+		}
+	}
+}
+return arr;
+}
+document.write(sort([4,3,22,2,1]));
+</script>
+</body>
+</html>

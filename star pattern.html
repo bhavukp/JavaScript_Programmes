@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+function starpattern(num){
+
+	for (row=0; row<num;row++){
+		for(space=0;space<num-row;space++){
+			document.write("&nbsp");
+		}
+		for (star=0;star<(2*row)-1;star++){
+			document.write("*");
+		}
+		document.write("<br/>");
+	}
+}
+
+starpattern(prompt());
+</script>
+</body>
+</html>

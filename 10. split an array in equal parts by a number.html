@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function splicing(arr,num){
+		var x = [];
+		while(arr.length>0){
+			var y = arr.splice(0,num);
+			x.push(y+'<br>');
+		}
+			return x;
+	}
+		document.write(splicing(["a","b","c","d"],1));
+</script>
+</body>
+</html>

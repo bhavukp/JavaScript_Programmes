@@ -1,0 +1,14 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+	function truncate(str,num){
+		if(num>str.length)return str;
+		if(num<=3)return str.slice(0,num) + "...";
+		return str.slice(0,num-3)+ "...";
+	}
+
+		document.write(truncate("what a beautiful day",12));
+</script>
+</body>
+</html>

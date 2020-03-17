@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function stringNumTimes(str,num){
+			if (num<0)return "";
+			if (num==1)return str; //base case
+
+			return str + " "+stringNumTimes(str, num-1);
+		}
+		document.write(stringNumTimes("bhavuk",99));
+	</script>
+</body>
+</html>

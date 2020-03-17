@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">	
+function palindrome (str){
+  var reg=/[\W_]/g;
+  var y = str.toLowerCase().replace(reg,"");
+  var x = y.split("").reverse().join("");
+  if (x == y) return "it is a palendrome";
+
+  return "not a palendrome";
+}
+document.write(palindrome("racecar*-- "));
+</script>
+</body>
+</html>

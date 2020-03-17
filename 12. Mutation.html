@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mutation(arr){
+			var firstWord = arr[0].toLowerCase();
+			var secondWord = arr[1].toLowerCase();
+
+			for(i=0; i<secondWord.length; i++){
+				if(firstWord.indexOf(secondWord[i])== -1) return false;
+			}
+
+				return true;
+			}
+document.write(mutation(["aeroplane","aero"]));
+	</script>
+</body>
+</html>
